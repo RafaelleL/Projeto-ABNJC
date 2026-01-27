@@ -310,21 +310,6 @@
 </footer>
 
   <!-- INCLUDES -->
-  <script src="assets/js/script.js"></script>
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      document.querySelectorAll("[data-include]").forEach(el => {
-        fetch(el.getAttribute("data-include"))
-          .then(res => res.text())
-          .then(data => {
-            el.innerHTML = data;
-            if (el.getAttribute("data-include").includes("header")) initHeaderScripts();
-          });
-      });
-    });
-  </script>
-
+<script src="assets/js/script.js"></script>
 </body>
-
 </html>
