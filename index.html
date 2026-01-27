@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABNJC - Associação Natal Justino da Costa</title>
+  <link rel="icon" type="image/png" href="assets/img/Páginas/logo/logo.png">
+
+
+  <meta name="description"
+    content="Associação Beneficente Natal Justino da Costa em Unaí/MG. Projetos sociais, apoio a famílias, cursos e voluntariado. Doe e ajude a transformar vidas.">
+
+
+  <!-- Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+
+  <!-- CSS Global -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <!-- CSS da página -->
+  <style>
+    /* ---------------- GERAIS ---------------- */
+    html,
+    body {
+      overflow-x: hidden;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      padding: 3rem 1rem;
+    }
+
+    .Titulo-inicial {
+      text-align: center;
+      font-size: clamp(1.8rem, 3vw, 2.4rem);
+      color: var(--cor-vermelho);
+      margin-bottom: 1rem;
+    }
+    /* ---------------- SEÇÕES EM CARD ---------------- */
+    .section-box {
+      background: #fff;
+      border-radius: 18px;
+      padding: 2.5rem 2rem;
+      margin-bottom: 3rem;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+    }
+
+    /* ---------------- BANNER DA INTRODUÇÃO ---------------- */
+    .banner {
+      width: 100%;
+      height: 100vh;
+      box-shadow: 2px rgba(246, 245, 245, 2);
+      ;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .banner video {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      min-width: 100%;
+      min-height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      filter: brightness(0.6);
+      z-index: -2;
+    }
+
+    @keyframes zoom {
+      0% {
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      100% {
+        transform: translate(-50%, -50%) scale(1.08);
+      }
+    }
+
+    .banner .content {
+      position: absolute;
+      top: 55%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      max-width: 800px;
+      width: 90%;
+      color: #fff;
+    }
+
+    .banner h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      font-weight: 700;
+      margin-bottom: 1.4rem;
+      text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+    }
+
+    .banner a {
+      display: inline-block;
+      background: var(--cor-vermelho);
+      color: #fff;
+      padding: 12px 30px;
+      border-radius: 40px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: 0.3s ease;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .banner a:hover {
+      background: var(--cor-vermelho);
+      transform: translateY(-2px);
+    }
+
+    /* ---------------- ATIVIDADES ---------------- */
+    .atividades-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .atividade-card {
+      background: #f8f7f7;
+      padding: 1.5rem;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+      text-decoration: none;
+      color: var(--Preto-Suave);
+      transition: 0.3s;
+      font-weight: 500;
+    }
+
+    .atividade-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+      color: var(--cor-vermelho);
+    }
+    /* ---------------- LOCALIZAÇÃO ---------------- */
+    .localizacao iframe {
+      width: 100%;
+      max-width: 900px;
+      height: 400px;
+      border: 0;
+      border-radius: 12px;
+      box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
+    }
+
+  </style>
+</head>
+
+<body>
+
+<!--BARRA DE NAVEGAÇÃO-->
+<header>
+  <nav class="nav-bar">
+    <div class="logo">
+      <img class="logo-menu" src="assets/img/Páginas/logo/logo transparente.png">
+    </div>
+
+    <!-- Menu Desktop -->
+    <div class="nav-list">
+      <ul>
+        <li class="nav-item"><a href="inicial.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Projetos <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="apoio-escolar.html" class="nav-link">Apoio Escolar</a>
+            <a href="gestantes.html" class="nav-link">Curso para Gestantes</a>
+            <a href="atividades-sociais.html" class="nav-link">Atividades Sociais</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Botão Doar -->
+    <div class="doar-button">
+      <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+    </div>
+
+    <!-- Ícone Mobile -->
+    <div class="mobile-menu-icon">
+      <button>
+        <img class="icon" src="assets/img/Páginas/Header/menu_black.svg" alt="Menu">
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Projetos <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="apoio-escolar.html" class="nav-link">Apoio Escolar</a>
+            <a href="gestantes.html" class="nav-link">Curso para Gestantes</a>
+            <a href="atividades-sociais.html" class="nav-link">Atividades Sociais</a>
+          </div>
+        </li>
+      </ul>
+
+    <div class="doar-button">
+      <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+    </div>
+  </div>
+</header>
+
+
+
+  <!-- BANNER -->
+  <section class="banner">
+    <video autoplay loop muted playsinline>
+      <source src="assets/img/Páginas/Inicial/video-fundo.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="content">
+      <h1>Transformando vidas através da solidariedade!</h1>
+      <a href="doacao.html">QUERO DOAR</a>
+    </div>
+  </section>
+
+
+  <main>
+    <div class="container-max">
+
+
+      <section class="section-box">
+        <h2 class="Titulo-inicial">Quem somos</h2>
+        <p>
+          A Associação Beneficente Natal Justino da Costa atua há mais de 30 anos apoiando famílias em situação de
+          vulnerabilidade. Nosso trabalho é baseado na solidariedade, respeito e compromisso com a comunidade.
+        </p>
+        <a href="sobre.html" class="btn-principal">👉 CONHEÇA NOSSA HISTÓRIA</a>
+      </section>
+
+
+      <!-- ATIVIDADES -->
+      <section class="section-box" style="background-color: var(--Cinza-claro);">
+        <h2 class="Titulo-inicial"> ATIVIDADES </h2>
+        <p class="Texto-Atv">
+          Conheça algumas das ações desenvolvidas pela Associação:
+        </p>
+        <div class="atividades-grid">
+          <a href="atividades-sociais.html" class="atividade-card">🍲 Sopa fraterna</a>
+          <a href="atividades-sociais.html" class="atividade-card">🧺 Distribuição de cestas básicas</a>
+          <a href="atividades-sociais.html" class="atividade-card">🥛 Doação de leite (Bairro Mamoeiro)</a>
+          <a href="gestantes.html" class="atividade-card">🤰 Curso de gestantes</a>
+          <a href="apoio-escolar.html" class="atividade-card">📚 Apoio escolar (Bairro Mamoeiro)</a>
+        </div>
+      </section>
+
+
+      <!-- LOCALIZAÇÃO -->
+      <section class="section-box localizacao">
+        <h2 class="Titulo-inicial"> 📍 Nossa Localização </h2>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3828.3027914123927!2d-46.89999752523532!3d-16.358530884363624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9357aa2c7b37d143%3A0x77f95cbb29eba92f!2sCentro%20Esp%C3%ADrita%20Cristianismo%20Redivivo!5e0!3m2!1spt-BR!2sbr!4v1760181809061!5m2!1spt-BR!2sbr"
+          loading="lazy">
+        </iframe>
+      </section>
+
+    </div>
+  </main>
+
+
+<footer>
+  <div id="footer_content">
+    <div id="footer_contacts">
+      <img src="assets/img/Páginas/logo/logo transparente.png" class="logo-footer">
+      <p>ASSOCIAÇÃO NATAL JUSTINO DA COSTA</p>
+
+      <div id="footer_social_media">
+        <a href="https://www.instagram.com/associacaonataljustino/" class="footer-link" id="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5538999108781&text&type=phone_number&app_absent=0" class="footer-link" id="Whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <ul class="Footer-List">
+      <li><p>LINKS</p></li>
+      <li><a href="index.html" class="footer-link">Início</a></li>
+      <li><a href="apoio-escolar.html" class="footer-link">Projetos</a></li>
+      <li><a href="doacao.html" class="footer-link">Doação</a></li>
+    </ul>
+  </div>
+
+
+  <br><br>
+
+  <div id="footer_copyright">
+    &#169; 2025 todos os direitos reservados
+  </div>
+</footer>
+
+  <!-- INCLUDES -->
+  <script src="assets/js/script.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("[data-include]").forEach(el => {
+        fetch(el.getAttribute("data-include"))
+          .then(res => res.text())
+          .then(data => {
+            el.innerHTML = data;
+            if (el.getAttribute("data-include").includes("header")) initHeaderScripts();
+          });
+      });
+    });
+  </script>
+
+</body>
+
+</html>

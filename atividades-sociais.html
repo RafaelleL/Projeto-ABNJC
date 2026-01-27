@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABNJC - Atividades Sociais</title>
+  <link rel="icon" type="image/png" href="assets/img/Páginas/logo/logo.png">
+
+  <meta name="description" content="Associação Beneficente Natal Justino da Costa em Unaí/MG. Projetos sociais, apoio a famílias, cursos e voluntariado. Doe e ajude a transformar vidas.">
+
+  <!-- Ícones footer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+<style>
+
+/* TÍTULOS -------------------------------------------------*/
+
+.introducao {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color:#222;
+}
+
+
+.intrucao-chamada{
+  font-size: 1.1rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  color: var(--Preto-Suave);
+  font-weight: bold;
+
+}
+p { 
+  margin: 0;
+}
+/* BLOCOS --------------------------------------------------*/
+.bloco {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 14px;
+  margin-bottom: 3rem;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+}
+
+.titulo-blocos {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+}
+
+/* TEXTO ---------------------------------------------------*/
+
+.bloco-invertido {
+  background-color: var(--Cinza-claro);
+}
+
+
+.titulo-chamada {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #c0392b;
+}
+
+/* BOTÃO ---------------------------------------------------*/
+.btn-principal {
+  display: block;      /* transforma o botão em bloco */
+  width: 300px;
+  margin: 1rem auto 0; /* centraliza horizontalmente */
+  transition: 0.3s ease;
+  text-align: center;  /* garante texto centralizado */
+}
+
+
+/* SLIDES --------------------------------------------------*/
+
+.slideshow-container {
+  max-width: 450px;
+  margin: 1.5rem auto;
+  border-radius: 12px;
+  position: relative;
+}
+
+/* Botões das setas */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  padding: 14px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.3s;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+ }
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.3);
+}
+
+</style>
+</head>
+
+<body>
+<!--BARRA DE NAVEGAÇÃO-->
+<header>
+  <nav class="nav-bar">
+    <div class="logo">
+      <img class="logo-menu" src="assets/img/Páginas/logo/logo transparente.png">
+    </div>
+
+    <!-- Menu Desktop -->
+    <div class="nav-list">
+      <ul>
+        <li class="nav-item"><a href="inicial.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Projetos <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="apoio-escolar.html" class="nav-link">Apoio Escolar</a>
+            <a href="gestantes.html" class="nav-link">Curso para Gestantes</a>
+            <a href="atividades-sociais.html" class="nav-link">Atividades Sociais</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Botão Doar -->
+    <div class="doar-button">
+      <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+    </div>
+
+    <!-- Ícone Mobile -->
+    <div class="mobile-menu-icon">
+      <button>
+        <img class="icon" src="assets/img/Páginas/Header/menu_black.svg" alt="Menu">
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Projetos <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="apoio-escolar.html" class="nav-link">Apoio Escolar</a>
+            <a href="gestantes.html" class="nav-link">Curso para Gestantes</a>
+            <a href="atividades-sociais.html" class="nav-link">Atividades Sociais</a>
+          </div>
+        </li>
+      </ul>
+
+    <div class="doar-button">
+      <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+    </div>
+  </div>
+</header>
+
+<!-- CONTEÚDO PRINCIPAL -->
+<main>
+<div class="container-max">
+  
+<h1 class="Titulo"> ATIVIDADES SOCIAIS </h1>
+<hr>
+<p class="introducao">  A missão da Associação é o desenvolvimento do ser humano como ser integral,
+mobilizando-o a reconhecer seu potencial e auxiliando-o a adquirir melhores condições de vida.
+</p>
+
+<p class="intrucao-chamada">Conheça nossas principais ações sociais:</p>
+
+<!-- BLOCO: SOPA -------------------------------------------------------->
+<section class="bloco" id="sopa">
+<h2 class="titulo-blocos">🍲 Sopa Fraterna</h2>
+
+<div class="texto">
+<p> O projeto <b>Sopa Fraterna</b>, realizado em parceria com o <b>Centro Espírita Cristianismo Redivivo</b>, oferece refeições quentinhas e acolhimento a pessoas em situação de vulnerabilidade.
+A ação é sustentada por doações da comunidade, que contribuem com alimentos e apoio voluntário.
+</p>
+</div>  <!-- Fechando div texto-->
+
+<div class="slideshow-container">
+  <div class="mySlides1"><img src="assets/img/Atividades/sopa/1.jpg" style="width:100%"></div>
+  <div class="mySlides1"><img src="assets/img/Atividades/sopa/2.jpg" style="width:100%"></div>
+  <div class="mySlides1"><img src="assets/img/Atividades/sopa/3.jpg" style="width:100%"></div>
+  <div class="mySlides1"><img src="assets/img/Atividades/sopa/4.jpg" style="width:100%"></div>
+  <div class="mySlides1"><img src="assets/img/Atividades/sopa/5.jpg" style="width:100%"></div>
+  <div class="mySlides1"><img src="assets/img/Atividades/sopa/6.jpg" style="width:100%"></div>
+
+  <a class="prev" onclick="plusSlides(-1,0)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1,0)">&#10095;</a>
+</div> 
+
+<a class="btn-principal">🤝 Quero ajudar na Sopa!</a>
+</section>
+
+<!-- BLOCO: BANHOS ------------------------------------------------------>
+<section class="bloco bloco-invertido" id="banho">
+<h2 class="titulo-blocos">👕 Banhos e Roupas</h2>
+
+<div class="texto">
+<p class="p-titulo">Importância do Cuidado Pessoal</p>
+<p>O cuidado pessoal preserva saúde, dignidade e autoestima, sendo essencial para reintegração social.</p>
+
+<p class="p-titulo">Impacto na autoestima</p>
+<p>Esse gesto resgata identidade, autonomia e sentimento de pertencimento.</p>
+
+<p class="titulo-chamada">Como posso ajudar?</p>
+<p>Doando roupas, itens de higiene ou ajudando como <b>voluntário</b>.</p>
+</div>  <!-- Fechando div texto-->
+
+<a class="btn-principal">🤝 Quero Ajudar!</a>
+</section>
+
+<!-- BLOCO: CESTAS ------------------------------------------------------>
+<section class="bloco" id="cestas">
+<h2 class="titulo-blocos">🧺 Doação de Cestas Básicas</h2>
+
+<div class="texto">
+<p>
+As cestas são arrecadadas pela <b>Campanha Fraterna Auta de Souza</b>, organizada pelo
+<b>Centro Espírita Cristianismo Redivivo</b> com apoio da Associação Natal Justino da Costa.
+Cada cesta representa um lar alimentado e esperança renovada.
+</p>
+</div>  <!-- Fechando div texto-->
+
+<a class="btn-principal">🤝 Quero doar alimentos!</a>
+</section>
+
+<!-- BLOCO: DOAÇÃO DE LEITE --------------------------------------------->
+<section class="bloco bloco-invertido" id="leite">
+<h2 class="titulo-blocos">🍼 Doação de Leite - Bairro Mamoeiro</h2>
+
+<div class="texto">
+<p>
+O projeto oferece apoio nutricional a crianças de <b>0 a 2 anos</b> em situação de vulnerabilidade no Bairro Mamoeiro e região.
+As doações são contínuas e essenciais para garantir um futuro mais saudável às crianças.
+</p>
+</div> <!-- Fechando div texto-->
+
+<a class="btn-principal">🤝 Apoiar projeto</a>
+</section>
+
+</div>
+</main>
+
+<footer>
+  <div id="footer_content">
+    <div id="footer_contacts">
+      <img src="assets/img/Páginas/logo/logo transparente.png" class="logo-footer">
+      <p>ASSOCIAÇÃO NATAL JUSTINO DA COSTA</p>
+
+      <div id="footer_social_media">
+        <a href="https://www.instagram.com/associacaonataljustino/" class="footer-link" id="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5538999108781&text&type=phone_number&app_absent=0" class="footer-link" id="Whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <ul class="Footer-List">
+      <li><p>LINKS</p></li>
+      <li><a href="index.html" class="footer-link">Início</a></li>
+      <li><a href="apoio-escolar.html" class="footer-link">Projetos</a></li>
+      <li><a href="doacao.html" class="footer-link">Doação</a></li>
+    </ul>
+  </div>
+
+
+  <br><br>
+
+  <div id="footer_copyright">
+    &#169; 2025 todos os direitos reservados
+  </div>
+</footer>
+
+<!-- JAVASCRIPT-->
+  <!-- INCLUDES -->
+  <script src="assets/js/script.js"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("[data-include]").forEach(el => {
+        fetch(el.getAttribute("data-include"))
+          .then(res => res.text())
+          .then(data => {
+            el.innerHTML = data;
+            if (el.getAttribute("data-include").includes("header")) initHeaderScripts();
+          });
+      });
+    });
+  </script>
+
+<!-- SLIDER SCRIPT -->
+<script>
+let slideIndex = [1];
+let slideId = ["mySlides1"];
+showSlides(1, 0);
+
+function plusSlides(n, no) { showSlides(slideIndex[no] += n, no); }
+
+function showSlides(n, no) {
+  let x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) slideIndex[no] = 1;
+  if (n < 1) slideIndex[no] = x.length;
+  for (let i = 0; i < x.length; i++) x[i].style.display = "none";
+  x[slideIndex[no]-1].style.display = "block";
+}
+</script>
+
+</body>
+</html>

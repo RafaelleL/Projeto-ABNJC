@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABNJC - Doação</title>
+  <link rel="icon" type="image/png" href="assets/img/Páginas/logo/logo.png">
+
+  <meta name="description" content="Associação Beneficente Natal Justino da Costa em Unaí/MG. Projetos sociais, apoio a famílias, cursos e voluntariado. Doe e ajude a transformar vidas.">
+
+  <!-- Ícones footer -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+  <!-- CSS global -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <!-- CSS LOCAL -->
+  <style>
+    .doacao-hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      align-items: center;
+      padding: 3rem 1rem;
+    }
+
+    .doacao-texto h1 {
+      font-size: 2.2rem;
+      color: var(--cor-vermelho);
+      margin-bottom: 0.5rem;
+    }
+
+    .doacao-texto h3 {
+      color: var(--cor-vermelhoescuro);
+      margin-bottom: 1rem;
+    }
+
+    .doacao-texto p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    .doacao-imagem img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .card-doacao {
+      background: #f7f9f8;
+      border-radius: 14px;
+      padding: 2rem;
+      margin: 3rem auto;
+      max-width: 700px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    }
+
+    .card-doacao h2 {
+      text-align: center;
+      color: var(--Preto-suave);
+      margin-bottom: 1.5rem;
+    }
+
+    .dados {
+      margin-bottom: 1.2rem;
+    }
+
+    .dados strong {
+      color: var(--cor-vermelho);
+    }
+
+    .pix-box {
+      background: #fec7c7;
+      border-radius: 10px;
+      padding: 1.2rem;
+      text-align: center;
+      margin-top: 1.5rem;
+    }
+
+    .pix-box span {
+      font-weight: bold;
+      font-size: 1.1rem;
+      display: block;
+      margin-bottom: 0.8rem;
+      word-break: break-all;
+    }
+
+    .btn-copiar {
+      background: black;
+      color: #fff;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    .btn-copiar:hover {
+      background: var(--cor-vermelho);
+    }
+
+    .mensagem-final {
+      text-align: center;
+      margin-bottom: 3px;
+      color: var(--cor-vermelhoescuro);
+    }
+
+    @media (max-width: 768px) {
+      .doacao-hero {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<!--BARRA DE NAVEGAÇÃO-->
+<header>
+  <nav class="nav-bar">
+    <div class="logo">
+      <img class="logo-menu" src="assets/img/Páginas/logo/logo transparente.png">
+    </div>
+
+    <!-- Menu Desktop -->
+    <div class="nav-list">
+      <ul>
+        <li class="nav-item"><a href="inicial.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Projetos <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="apoio-escolar.html" class="nav-link">Apoio Escolar</a>
+            <a href="gestantes.html" class="nav-link">Curso para Gestantes</a>
+            <a href="atividades-sociais.html" class="nav-link">Atividades Sociais</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Botão Doar -->
+    <div class="doar-button">
+      <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+    </div>
+
+    <!-- Ícone Mobile -->
+    <div class="mobile-menu-icon">
+      <button>
+        <img class="icon" src="assets/img/Páginas/Header/menu_black.svg" alt="Menu">
+      </button>
+    </div>
+  </nav>
+
+  <!-- Menu Mobile -->
+  <div class="mobile-menu">
+      <ul>
+        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
+
+        <li class="nav-item dropdown">
+          <a href="#" class="nav-link">Projetos <i class="fas fa-caret-down"></i></a>
+          <div class="dropdown-menu">
+            <a href="apoio-escolar.html" class="nav-link">Apoio Escolar</a>
+            <a href="gestantes.html" class="nav-link">Curso para Gestantes</a>
+            <a href="atividades-sociais.html" class="nav-link">Atividades Sociais</a>
+          </div>
+        </li>
+      </ul>
+
+    <div class="doar-button">
+      <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container-max">
+
+    <!-- HERO -->
+    <section class="doacao-hero">
+      <div class="doacao-texto">
+        <h1 style="text-transform: uppercase;">Campanha Solidária</h1>
+        <h3>Faça parte dessa corrente do bem</h3>
+
+        <p>
+          A <strong>Associação Beneficente Natal Justino da Costa</strong> atua
+          no apoio a famílias, projetos sociais e ações comunitárias em Unaí/MG.
+        </p>
+
+        <p>
+          Sua doação, independentemente do valor, contribui diretamente para a
+          continuidade dos nossos projetos e para a transformação de vidas.
+        </p>
+
+        <p><strong>Doe agora e ajude a espalhar esperança.</strong></p>
+      </div>
+
+      <div class="doacao-imagem">
+        <img src="assets/img/Páginas/logo/Logo Associação ABNJC-1.png" alt="Campanha solidária da ABNJC">
+      </div>
+    </section>
+
+    <!-- CARD DOAÇÃO -->
+    <section class="card-doacao">
+      <h2>Como doar</h2>
+
+      <div class="dados">
+        <p><strong>Banco:</strong> 748 - Banco Cooperativo Sicredi S.A.</p>
+        <p><strong>Agência:</strong> 3953</p>
+        <p><strong>Conta:</strong> 98547-6</p>
+        <p><strong>Razão Social:</strong> Associação Beneficente Natal Justino da Costa</p>
+        <p><strong>CNPJ:</strong> 01.320.260/0001-07</p>
+      </div>
+
+      <div class="pix-box">
+        <p>Chave PIX (CNPJ):</p>
+        <span id="pix">01320260000107</span>
+        <button class="btn-copiar" onclick="copiarPix()">Copiar PIX</button>
+      </div>
+    </section>
+
+
+    <p class="mensagem-final">❤️ Sua solidariedade constrói um futuro melhor para muitas famílias. <br> Obrigado por fazer parte dessa missão. </p>
+
+  </div>
+</main>
+
+<footer>
+  <div id="footer_content">
+    <div id="footer_contacts">
+      <img src="assets/img/Páginas/logo/logo transparente.png" class="logo-footer">
+      <p>ASSOCIAÇÃO NATAL JUSTINO DA COSTA</p>
+
+      <div id="footer_social_media">
+        <a href="https://www.instagram.com/associacaonataljustino/" class="footer-link" id="Instagram">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send/?phone=5538999108781&text&type=phone_number&app_absent=0" class="footer-link" id="Whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+      </div>
+    </div>
+
+    <ul class="Footer-List">
+      <li><p>LINKS</p></li>
+      <li><a href="index.html" class="footer-link">Início</a></li>
+      <li><a href="apoio-escolar.html" class="footer-link">Projetos</a></li>
+      <li><a href="doacao.html" class="footer-link">Doação</a></li>
+    </ul>
+  </div>
+
+
+  <br><br>
+
+  <div id="footer_copyright">
+    &#169; 2025 todos os direitos reservados
+  </div>
+</footer>
+
+
+<!-- JAVASCRIPT-->
+<!-- INCLUDES -->
+  <script src="assets/js/script.js"></script>
+
+
+<script>
+  function copiarPix() {
+    const pix = document.getElementById("pix").innerText;
+    navigator.clipboard.writeText(pix);
+    alert("Chave PIX copiada com sucesso!");
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const includes = document.querySelectorAll("[data-include]");
+    includes.forEach(el => {
+      const file = el.getAttribute("data-include");
+      fetch(file)
+        .then(response => response.text())
+        .then(data => el.innerHTML = data);
+    });
+  });
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      document.querySelectorAll("[data-include]").forEach(el => {
+        fetch(el.getAttribute("data-include"))
+          .then(res => res.text())
+          .then(data => {
+            el.innerHTML = data;
+            if (el.getAttribute("data-include").includes("header")) initHeaderScripts();
+          });
+      });
+    });
+</script>
+</body>
+
+</html>
