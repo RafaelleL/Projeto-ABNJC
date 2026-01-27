@@ -9,9 +9,9 @@ function initHeaderScripts() {
       menuMobile.classList.toggle('open');
 
       if (menuMobile.classList.contains('open')) {
-        icon.src = "../img/Páginas/Header/close-black.svg";
+        icon.src = "assets/img/Páginas/Header/close-black.svg";
       } else {
-        icon.src = "../img/Páginas/Header/menu_black.svg";
+        icon.src = "assets/img/Páginas/Header/menu_black.svg";
       }
     });
   });
