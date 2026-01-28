@@ -1,29 +1,39 @@
-function initHeaderScripts() {
-  // Abre/fecha menu mobile e troca ícone
-  const menuIcons = document.querySelectorAll('.mobile-menu-icon button'); 
-  const menuMobile = document.querySelector('.mobile-menu');
-  const icon = document.querySelector('.icon');
+document.addEventListener('DOMContentLoaded', () => {
+// ================= MENU MOBILE =================
+const menuButton = document.querySelector('.mobile-menu-icon button');
+const mobileMenu = document.querySelector('.mobile-menu');
+const menuIcon = document.querySelector('.mobile-menu-icon .icon');
 
-  menuIcons.forEach(btn => {
-    btn.addEventListener('click', () => {
-      menuMobile.classList.toggle('open');
 
-      if (menuMobile.classList.contains('open')) {
-        icon.src = "assets/img/Páginas/Header/close-black.svg";
-      } else {
-        icon.src = "assets/img/Páginas/Header/menu_black.svg";
-      }
-    });
-  });
+if (menuButton && mobileMenu && menuIcon) {
+menuButton.addEventListener('click', () => {
+mobileMenu.classList.toggle('open');
 
-  // Dropdown no mobile
-  const mobileDropdowns = document.querySelectorAll('.mobile-menu .nav-item.dropdown > a');
 
-  mobileDropdowns.forEach(drop => {
-    drop.addEventListener('click', function(e) {
-      e.preventDefault();
-      const menu = this.nextElementSibling; 
-      menu.classList.toggle('open');
-    });
-  });
+// Troca o ícone
+menuIcon.src = mobileMenu.classList.contains('open')
+? 'assets/img/Páginas/Header/close-black.svg'
+: 'assets/img/Páginas/Header/menu_black.svg';
+});
 }
+
+
+// ================= DROPDOWN MOBILE =================
+const mobileDropdownLinks = document.querySelectorAll(
+'.mobile-menu .nav-item.dropdown > a'
+);
+
+
+mobileDropdownLinks.forEach(link => {
+link.addEventListener('click', e => {
+e.preventDefault();
+
+
+const dropdownMenu = link.nextElementSibling;
+if (!dropdownMenu) return;
+
+
+dropdownMenu.classList.toggle('open');
+});
+});
+});
