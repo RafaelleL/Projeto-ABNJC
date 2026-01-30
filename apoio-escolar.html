@@ -143,52 +143,43 @@ margin-bottom: 1.5rem;
 </head>
 
 <body>
+  <!--BARRA DE NAVEGAÇÃO-->
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img class="logo-menu" src="assets/img/Páginas/logo/logo transparente.png">
+      </div>
 
-<!--BARRA DE NAVEGAÇÃO-->
-<header>
-  <nav class="nav-bar">
-    <div class="logo">
-      <img class="logo-menu" src="assets/img/Páginas/logo/logo transparente.png">
-    </div>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
 
-    <!-- Menu Desktop -->
-    <div class="nav-list">
+          <li class="nav-item dropdown"><a href="#" class="nav-link">Projetos<i class="fas fa-caret-down"></i></a>
+            <div class="dropdown-menu">
+              <a href="apoio-escolar.html" class="nav-link">Apoio Escolar</a>
+              <a href="gestantes.html" class="nav-link">Curso para Gestantes</a>
+              <a href="atividades-sociais.html" class="nav-link">Atividades Sociais</a>
+            </div>
+          </li>
+        </ul>
+      </div> <!-- fecha div do nav list-->
+
+      <div class="doar-button">
+        <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+      </div>
+
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="assets/img/Páginas/Header/menu_black.svg" alt=""></button>
+      </div>
+    </nav>
+
+    <div class="mobile-menu">
       <ul>
         <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
         <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
 
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link">Projetos <i class="fas fa-caret-down"></i></a>
-          <div class="dropdown-menu">
-            <a href="apoio-escolar.html" class="nav-link">Apoio Escolar</a>
-            <a href="gestantes.html" class="nav-link">Curso para Gestantes</a>
-            <a href="atividades-sociais.html" class="nav-link">Atividades Sociais</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-
-    <!-- Botão Doar -->
-    <div class="doar-button">
-      <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
-    </div>
-
-    <!-- Ícone Mobile -->
-    <div class="mobile-menu-icon">
-      <button>
-        <img class="icon" src="assets/img/Páginas/Header/menu_black.svg" alt="Menu">
-      </button>
-    </div>
-  </nav>
-
-  <!-- Menu Mobile -->
-  <div class="mobile-menu">
-      <ul>
-        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
-
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link">Projetos <i class="fas fa-caret-down"></i></a>
+        <li class="nav-item dropdown"><a href="#" class="nav-link">Projetos<i class="fas fa-caret-down"></i></a>
           <div class="dropdown-menu">
             <a href="apoio-escolar.html" class="nav-link">Apoio Escolar</a>
             <a href="gestantes.html" class="nav-link">Curso para Gestantes</a>
@@ -197,12 +188,14 @@ margin-bottom: 1.5rem;
         </li>
       </ul>
 
-    <div class="doar-button">
-      <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+      <div class="doar-button">
+        <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+      </div>
+
+
     </div>
-  </div>
-</header>
-<script src="assets/js/script.js"></script>
+  </header>
+  <script src="assets/js/script.js"></script>
 
 <!--CONTEUDO PRINCIPAL-->
 <main>
