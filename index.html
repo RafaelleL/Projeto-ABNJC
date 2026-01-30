@@ -40,6 +40,7 @@
       color: var(--cor-vermelho);
       margin-bottom: 1rem;
     }
+
     /* ---------------- SEÇÕES EM CARD ---------------- */
     .section-box {
       background: #fff;
@@ -143,6 +144,7 @@
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
       color: var(--cor-vermelho);
     }
+
     /* ---------------- LOCALIZAÇÃO ---------------- */
     .localizacao iframe {
       width: 100%;
@@ -152,72 +154,64 @@
       border-radius: 12px;
       box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
     }
-
   </style>
 </head>
 
 <body>
 
-<!--BARRA DE NAVEGAÇÃO-->
-<header>
-  <nav class="nav-bar">
-    <div class="logo">
-      <img class="logo-menu" src="assets/img/Páginas/logo/logo transparente.png">
-    </div>
+  <!--BARRA DE NAVEGAÇÃO-->
+  <header>
+    <nav class="nav-bar">
+      <div class="logo">
+        <img class="logo-menu" src="assets/img/Páginas/logo/logo transparente.png">
+      </div>
 
-    <!-- Menu Desktop -->
-    <div class="nav-list">
-      <ul>
-        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
+      <div class="nav-list">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
 
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link">Projetos <i class="fas fa-caret-down"></i></a>
+        <li class="nav-item dropdown"><a href="#" class="nav-link">Projetos<i class="fas fa-caret-down"></i></a>
           <div class="dropdown-menu">
             <a href="apoio-escolar.html" class="nav-link">Apoio Escolar</a>
             <a href="gestantes.html" class="nav-link">Curso para Gestantes</a>
             <a href="atividades-sociais.html" class="nav-link">Atividades Sociais</a>
           </div>
         </li>
-      </ul>
-    </div>
+        </ul>
+      </div> <!-- fecha div do nav list-->
 
-    <!-- Botão Doar -->
-    <div class="doar-button">
-      <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
-    </div>
+      <div class="doar-button">
+        <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+      </div>
 
-    <!-- Ícone Mobile -->
-    <div class="mobile-menu-icon">
-      <button>
-        <img class="icon" src="assets/img/Páginas/Header/menu_black.svg" alt="Menu">
-      </button>
-    </div>
-  </nav>
+      <div class="mobile-menu-icon">
+        <button onclick="menuShow()"><img class="icon" src="assets/img/Páginas/Header/menu_black.svg" alt=""></button>
+      </div>
+    </nav>
 
-  <!-- Menu Mobile -->
-  <div class="mobile-menu">
-      <ul>
-        <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
-        <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
+    <div class="mobile-menu">
+        <ul>
+          <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+          <li class="nav-item"><a href="sobre.html" class="nav-link">Sobre nós</a></li>
 
-        <li class="nav-item dropdown">
-          <a href="#" class="nav-link">Projetos <i class="fas fa-caret-down"></i></a>
+        <li class="nav-item dropdown"><a href="#" class="nav-link">Projetos<i class="fas fa-caret-down"></i></a>
           <div class="dropdown-menu">
             <a href="apoio-escolar.html" class="nav-link">Apoio Escolar</a>
             <a href="gestantes.html" class="nav-link">Curso para Gestantes</a>
             <a href="atividades-sociais.html" class="nav-link">Atividades Sociais</a>
           </div>
         </li>
-      </ul>
+        </ul>
 
-    <div class="doar-button">
-      <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+      <div class="doar-button">
+        <button><a href="doacao.html">FAÇA SUA DOAÇÃO</a></button>
+      </div>
+
+      
     </div>
-  </div>
-</header>
-<script src="assets/js/script.js"></script>
-
+  </header>
+  <script src="assets/js/script.js"></script>
 
   <!-- BANNER -->
   <section class="banner">
@@ -277,39 +271,42 @@
   </main>
 
 
-<footer>
-  <div id="footer_content">
-    <div id="footer_contacts">
-      <img src="assets/img/Páginas/logo/logo transparente.png" class="logo-footer">
-      <p>ASSOCIAÇÃO NATAL JUSTINO DA COSTA</p>
+  <footer>
+    <div id="footer_content">
+      <div id="footer_contacts">
+        <img src="assets/img/Páginas/logo/logo transparente.png" class="logo-footer">
+        <p>ASSOCIAÇÃO NATAL JUSTINO DA COSTA</p>
 
-      <div id="footer_social_media">
-        <a href="https://www.instagram.com/associacaonataljustino/" class="footer-link" id="Instagram">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
-        <a href="https://api.whatsapp.com/send/?phone=5538999108781&text&type=phone_number&app_absent=0" class="footer-link" id="Whatsapp">
-          <i class="fa-brands fa-whatsapp"></i>
-        </a>
+        <div id="footer_social_media">
+          <a href="https://www.instagram.com/associacaonataljustino/" class="footer-link" id="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://api.whatsapp.com/send/?phone=5538999108781&text&type=phone_number&app_absent=0"
+            class="footer-link" id="Whatsapp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
       </div>
+
+      <ul class="Footer-List">
+        <li>
+          <p>LINKS</p>
+        </li>
+        <li><a href="index.html" class="footer-link">Início</a></li>
+        <li><a href="apoio-escolar.html" class="footer-link">Projetos</a></li>
+        <li><a href="doacao.html" class="footer-link">Doação</a></li>
+      </ul>
     </div>
 
-    <ul class="Footer-List">
-      <li><p>LINKS</p></li>
-      <li><a href="index.html" class="footer-link">Início</a></li>
-      <li><a href="apoio-escolar.html" class="footer-link">Projetos</a></li>
-      <li><a href="doacao.html" class="footer-link">Doação</a></li>
-    </ul>
-  </div>
 
+    <br><br>
 
-  <br><br>
-
-  <div id="footer_copyright">
-    &#169; 2025 todos os direitos reservados
-  </div>
-</footer>
+    <div id="footer_copyright">
+      &#169; 2025 todos os direitos reservados
+    </div>
+  </footer>
 
   <!-- INCLUDES -->
-
 </body>
+
 </html>
